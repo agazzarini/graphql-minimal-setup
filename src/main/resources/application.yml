@@ -1,0 +1,5 @@
+logging:
+  level:
+    com.spaziocodice: DEBUG
+    org.springframework: INFO
+    root: INFO

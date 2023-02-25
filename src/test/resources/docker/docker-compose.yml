@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: library/postgres:14.5
+    environment:
+      - POSTGRES_USER=ldcat
+      - POSTGRES_PASSWORD=ldcat01
+      - POSTGRES_DB=svde_demo
+    command: postgres -c max_connections=300 -c log_min_messages=LOG
+    ports:
+      - "5432:5432"
+    tty: true

@@ -1,0 +1,12 @@
+type Bass {
+    id: ID!
+    fretless: Boolean
+    brand: String
+    model: String
+    strings: Int
+}
+
+type Query {
+    instruments(offset: Int, pageSize: Int): [Bass]!
+}
+
