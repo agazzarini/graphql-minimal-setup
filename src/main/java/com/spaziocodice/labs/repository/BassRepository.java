@@ -1,4 +1,4 @@
-package com.spaziocodice.labs.domain.repository;
+package com.spaziocodice.labs.repository;
 
 import com.spaziocodice.labs.domain.Bass;
 import org.springframework.data.repository.CrudRepository;

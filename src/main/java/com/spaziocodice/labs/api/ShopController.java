@@ -1,7 +1,7 @@
 package com.spaziocodice.labs.api;
 
 import com.spaziocodice.labs.domain.Bass;
-import com.spaziocodice.labs.domain.repository.BassRepository;
+import com.spaziocodice.labs.repository.BassRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
