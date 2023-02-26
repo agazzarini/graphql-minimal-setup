@@ -1,4 +1,4 @@
-package com.spaziocodice.labs.integration.order;
+package com.spaziocodice.labs.integration.shop;
 
 import com.spaziocodice.labs.domain.Bass;
 import com.spaziocodice.labs.integration.IntegrationTestCaseSuperLayer;
