@@ -4,10 +4,12 @@ services:
   postgres:
     image: library/postgres:14.5
     environment:
-      - POSTGRES_USER=ldcat
-      - POSTGRES_PASSWORD=ldcat01
-      - POSTGRES_DB=svde_demo
+      - POSTGRES_USER=shop_owner
+      - POSTGRES_PASSWORD=029348hdhj
+      - POSTGRES_DB=bass_shop
     command: postgres -c max_connections=300 -c log_min_messages=LOG
+    volumes:
+      - ./populate_shop.sql:/docker-entrypoint-initdb.d/populate_shop.sql
     ports:
       - "5432:5432"
     tty: true

@@ -3,3 +3,15 @@ logging:
     com.spaziocodice: DEBUG
     org.springframework: INFO
     root: INFO
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+  datasource:
+    username: shop_owner
+    password: 029348hdhj
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bass_shop?loggerLevel=OFF

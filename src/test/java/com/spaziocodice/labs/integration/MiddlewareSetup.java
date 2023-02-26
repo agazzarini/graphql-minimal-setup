@@ -25,5 +25,5 @@ public class MiddlewareSetup implements ApplicationContextInitializer<Configurab
                                     Wait.forListeningPort().withStartupTimeout(Duration.ofMinutes(5)));
             SUBSYSTEMS.start();
         }
-    }
+   }
 }

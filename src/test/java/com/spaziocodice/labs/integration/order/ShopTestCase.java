@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Iterator;
 
 import static java.util.Optional.of;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 
@@ -39,7 +38,7 @@ public class ShopTestCase extends IntegrationTestCaseSuperLayer {
                         .map(Bass.class::cast)
                         .orElseThrow();
         assertThat(fenderJazz.getStrings()).isEqualTo(4);
-        assertThat(fenderJazz.getModel()).isEqualTo("Jazz");
+        assertThat(fenderJazz.getModel()).isEqualTo("Jazz Vintage 62");
         assertThat(fenderJazz.getBrand()).isEqualTo("Fender");
         assertThat(fenderJazz.isFretless()).isFalse();
     }
